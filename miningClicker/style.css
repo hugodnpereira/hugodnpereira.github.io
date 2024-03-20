@@ -1,0 +1,252 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Voltage;
+    src: url("../ressources/kenyan\ coffee\ rg.ttf")
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 5fr 1fr;
+    font-family: Voltage;
+    cursor: default;
+    
+}
+.color3{
+    background-color: rgb(200, 161, 111);
+}
+.color4{
+    background-color: rgb(78, 78, 78);
+}
+.color5{
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+.img1{
+    height: 100%;
+    width: 100%;
+    background-image: url('../ressources/miningClicker/dwarfMiner.png');
+    background-size: cover;
+}
+.img2{
+    height: 100%;
+    width: 100%;
+    background-image: url('../ressources/miningClicker/pickaxe.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img3{
+    height: 100%;
+    width: 100%;
+    background-image: url('../ressources/miningClicker/wheelbarrow.png');
+    background-size: cover;
+}
+.img4{
+    height: 100%;
+    width: 100%;
+    background-image: url('../Ressources/miningClicker/bomb.png');
+    background-size: cover;
+
+}
+.img5{
+    height: 100%;
+    width: 100%;
+    background-image: url('../Ressources/miningClicker/jackhammer.png');
+    background-size: contain;
+}
+.img6{
+    height: 100%;
+    width: 100%;
+    background-image: url('../Ressources/miningClicker/diamondPickaxe.png');
+    background-size: contain;
+}
+.img7{
+    height: 100%;
+    width: 100%;
+    background-image: url('../Ressources/miningClicker/1079c65a38242d5.png');
+    background-size: contain;
+}
+.buffImg1{
+    background-image: url("../Ressources/Cursor-PNG-Photos.png");
+    background-size: contain;
+}
+h2{
+    font-size: 28px;
+}
+.leftMenu{
+    grid-row: 1/3;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 2fr 2rem 1fr;
+}
+.upgrades{
+    margin: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+.upgrades ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 0px;
+}
+.stats{
+    margin: 1rem;
+    margin-top: 0;
+    border-radius: 10px;
+}
+main{
+    grid-row: 1;
+    grid-column: 2;
+    background-image: url('../ressources/ironforge_by_kanaru92_d5g9tpu.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-size: cover;
+}
+main div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pickaxe{
+    height: 30%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border: 1rem solid rgb(39, 39, 39);
+    outline: 0.5rem solid white;
+    border-radius: 50%;
+    border-top:0.5rem solid rgb(39, 39, 39);
+    border-bottom:1.25rem solid rgb(39, 39, 39);
+    border-left: 0.75rem solid rgb(39, 39, 39);
+    border-right: 0.75rem solid rgb(39, 39, 39);
+    box-shadow: inset 0px -7px 3px 3px rgba(37, 37, 37, 0.300);
+}
+.pickaxe:hover{
+    cursor: pointer;
+}
+main span{
+    font-size: 36px;
+    min-width: 10rem;
+    text-align: center;
+    outline: 1rem solid rgba(37, 37, 37, 0.617);
+    border-radius: 15px;
+}
+.upgrades li{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid rgb(39, 39, 39);
+    align-items: center;
+    column-gap: 20px;
+}
+.upgrades li .upgradeImg{
+    height: 4rem;
+    width: 4rem;
+}
+h3{
+    font-size: 24px;
+    font-weight: normal;
+}
+.stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    color: rgb(40, 40, 40);
+}
+.stats div{
+    display: flex;
+    flex-direction: column;
+}
+.entryAlert{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.entryAlertBtn{
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+.entryAlertBtn:hover{
+    background-color: rgb(200, 161, 111);
+}
+.rulesBtn:hover{
+    background-color: rgb(200, 161, 111);
+}
+.minerUpBtn:hover{
+    background-color: rgb(200, 161, 111);
+}
+.rulesBtn{
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;    
+}
+.minerUpBtn{
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;    
+}
+.minerUp{
+    height: 50px;
+    width: 100%;
+    display: none;
+}
+.buffs{
+    margin: 1rem;
+    border-radius: 10px;
+    display: none;
+
+}
+.buffs ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 0px;
+}
+.upgradeOrBuff{
+    display: flex;
+    justify-content: space-around;
+}
+.upgradeOrBuff span:hover{
+    cursor: pointer;
+}
+.upgradeOrBuff span:nth-child(1){
+    text-decoration: solid underline;
+}
+.buffs li{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid rgb(39, 39, 39);
+    align-items: center;
+    column-gap: 20px;
+}
+.buffs li .buffImg{
+    height: 4rem;
+    width: 4rem;
+}
