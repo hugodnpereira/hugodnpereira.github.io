@@ -21,16 +21,19 @@ h1{
 h2{
     color: #ebe9e2;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     animation: clignote 5s infinite;
+    padding-bottom: 0.1em;
+    border-bottom: #1a1a1a 3px solid;
 }
 .color-primary{
-    background-color: #1a1a1a;
+    background-color: #1b1b1b;
     color: #ebe9e2;
 
 }
 .color-secondary{
-    background-color: #6c6c6c;
+    /* background-color: #6c6c6c; */
+    background-color: #d7b54f;
     color: #1a1a1a;
 }
 .color-tertiary{
@@ -84,12 +87,17 @@ h2{
     margin-bottom: 0.7em;
     position: relative;
 }
+.desc{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
 .hide{
     display: none;
     
 }
-.desc{
-    margin-bottom: 2rem;
+h4{
+    margin-top: 1em;
 }
 
 /* media query */

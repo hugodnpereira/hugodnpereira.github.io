@@ -1,4 +1,5 @@
 // Autor: Hugo DO NASCIMENTO PEREIRA
+
 const hideElement = document.querySelector('.hide');
 const profile = document.querySelector('.right div:nth-child(1)');
 const experience = document.querySelector('.right div:nth-child(2)');
