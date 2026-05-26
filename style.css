@@ -33,7 +33,7 @@ h2{
 }
 .color-secondary{
     /* background-color: #6c6c6c; */
-    background-color: #d7b54f;
+    background-color: #304063;
     color: #1a1a1a;
 }
 .color-tertiary{
@@ -41,7 +41,7 @@ h2{
     color: #1a1a1a;
 }
 .color-blue{
-    background-color: #416eb1;
+    background-color: #314879;
     color: #1a1a1a;
 }
 .left{
@@ -95,6 +95,37 @@ h2{
 .hide{
     display: none;
     
+}
+#download-pdf {
+    margin-top: 40px;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 18px;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.35),
+        inset 0 1px 1px rgba(255, 255, 255, 0.08);
+    transition: all 0.25s ease;
+}
+
+#download-pdf:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.45),
+        0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+#download-pdf:active {
+    transform: scale(0.97);
+}
+
+#download-pdf::before {
+    content: "⬇ ";
+    font-size: 1.1rem;
 }
 h4{
     margin-top: 1em;
